@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="zFu-qq-ZOf">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uTp-Aa-Vby" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="slideInVC" id="Z5z-ev-BNC" customClass="SlideInViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wd6-pP-l7G">
+                        <rect key="frame" x="0.0" y="20" width="404" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Slide in" lineBreakMode="tailTruncation" minimumFontSize="10" id="Hfq-VM-ECN">
+                                <rect key="frame" x="181" y="418" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Irrelevant button" lineBreakMode="tailTruncation" minimumFontSize="10" id="y1k-fs-ebE">
+                                <rect key="frame" x="150" y="211" width="105" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="UsX-CO-QDd">
+                                <rect key="frame" x="106" y="567" width="207" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="downSwipeGR" destination="btn-Gf-LfN" id="NZo-2L-YVJ"/>
+                        <outlet property="leftSwipeGR" destination="673-Yo-b3l" id="7bA-s3-Qlw"/>
+                        <outlet property="rightSwipeGR" destination="hbR-Et-g3P" id="RjB-3T-cUt"/>
+                        <outlet property="upSwipeGR" destination="2A8-li-P41" id="Ro8-SB-S9a"/>
+                    </connections>
+                </viewController>
+                <swipeGestureRecognizer direction="up" id="2A8-li-P41">
+                    <connections>
+                        <action selector="upSwipeActionRecognized:" destination="Z5z-ev-BNC" id="hvf-oY-9lH"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="down" id="btn-Gf-LfN">
+                    <connections>
+                        <action selector="downSwipeActionRecognized:" destination="Z5z-ev-BNC" id="XgQ-Qu-YiB"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="right" id="hbR-Et-g3P">
+                    <connections>
+                        <action selector="rightSwipeActionRecognized:" destination="Z5z-ev-BNC" id="UCf-3Y-5lU"/>
+                    </connections>
+                </swipeGestureRecognizer>
+                <swipeGestureRecognizer direction="left" id="673-Yo-b3l">
+                    <connections>
+                        <action selector="leftSwipeActionRecognized:" destination="Z5z-ev-BNC" id="OmJ-MK-cW7"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-214" y="-1859"/>
+        </scene>
+        <scene sceneID="cAM-7B-NB2">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEd-qd-KE4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="leftVC" id="pgZ-gq-ibt" customClass="LeftViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e5H-s6-XKm">
+                        <rect key="frame" x="0.0" y="20" width="384" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Left" lineBreakMode="tailTruncation" minimumFontSize="10" id="Pgg-6X-1V9">
+                                <rect key="frame" x="171" y="393" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ja3-P4-erx"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-214" y="-922"/>
+        </scene>
+        <scene sceneID="EiG-9A-rPQ">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N5d-md-hHu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="rightVC" id="glo-JE-yel" customClass="RightViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S4b-jR-fJv">
+                        <rect key="frame" x="0.0" y="20" width="640" height="748"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Right" lineBreakMode="tailTruncation" minimumFontSize="10" id="6Io-Pj-YVi">
+                                <rect key="frame" x="299" y="372" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="253" y="-925"/>
+        </scene>
+        <scene sceneID="4">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5">
+                        <rect key="frame" x="0.0" y="20" width="1024" height="748"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-214" y="73"/>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="LeftViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LeftViewController.h"/>
+        </class>
+        <class className="RightViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RightViewController.h"/>
+        </class>
+        <class className="SlideInViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SlideInViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="downSwipeActionRecognized:"/>
+                <relationship kind="action" name="leftSwipeActionRecognized:"/>
+                <relationship kind="action" name="rightSwipeActionRecognized:"/>
+                <relationship kind="action" name="upSwipeActionRecognized:"/>
+                <relationship kind="outlet" name="downSwipeGR" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="leftSwipeGR" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="rightSwipeGR" candidateClass="UISwipeGestureRecognizer"/>
+                <relationship kind="outlet" name="upSwipeGR" candidateClass="UISwipeGestureRecognizer"/>
+            </relationships>
+        </class>
+        <class className="ViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="leftVC" candidateClass="LeftViewController"/>
+                <relationship kind="outlet" name="rightVC" candidateClass="RightViewController"/>
+                <relationship kind="outlet" name="slideInVC" candidateClass="SlideInViewController"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
