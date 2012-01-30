@@ -1,6 +1,6 @@
 # SlideInHiddenView
 ## Overview
-Sample implementation to create hidden tray-type view
+Sample implementation of hidden tray-type view that comes open as user swipes.
 
 <img src="https://github.com/yfujiki/SlideInHiddenViewSample/raw/master/TransitionImage.png"/>
 
